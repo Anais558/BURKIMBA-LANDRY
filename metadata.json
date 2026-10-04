@@ -1,0 +1,6 @@
+{
+  "name": "Burkimba Transit Transport - Véhicules & Machines Chine",
+  "description": "Plateforme officielle de Burkimba Transit Transport : vente de véhicules, engins BTP et machines importés de Chine clés en main avec simulateur de coût livré et suivi de conteneur en direct.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
