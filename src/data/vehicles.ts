@@ -294,7 +294,7 @@ export const VEHICLES_DATA: Vehicle[] = [
       dedouanement: 'Immatriculation et carte de transport public possible',
       garantie: '2 ans ou 50 000 km'
     },
-    description: 'Le roi incontesté du transport interurbain au Faso. Fiable, économique en carburant et extrêmement rentable pour les compagnies de transport et institutions.',
+    description: 'Le roi incontesté du transport interurbain au Burkina Faso. Fiable, économique en carburant et extrêmement rentable pour les compagnies de transport et institutions.',
     badge: 'Rentabilité Maximale'
   },
   {

@@ -30,7 +30,6 @@ import {
   FORMAT_FCFA,
   BURKIMBA_INFO 
 } from '../data/transitData';
-import { BrandEmblem } from './BrandEmblem';
 
 interface AdminPageProps {
   onBackToStore: () => void;
@@ -189,8 +188,7 @@ export const AdminPage: React.FC<AdminPageProps> = ({ onBackToStore }) => {
 
             <div className="hidden xs:block h-6 w-px bg-slate-200" />
 
-            <div className="flex items-center gap-2.5">
-              <BrandEmblem size="sm" variant="red-gold" withTagline={false} />
+            <div className="flex items-center gap-2">
               <div>
                 <div className="text-sm sm:text-base font-black text-slate-900 flex items-center gap-1.5 leading-none">
                   <span className="text-red-600">BURKIMBA</span>
@@ -525,7 +523,7 @@ export const AdminPage: React.FC<AdminPageProps> = ({ onBackToStore }) => {
             <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div>
                 <h2 className="text-base sm:text-lg font-bold text-slate-900">
-                  Gestion du Catalogue Chine &amp; Stocks Faso
+                  Gestion du Catalogue Chine &amp; Stocks Burkina Faso
                 </h2>
                 <p className="text-xs text-slate-500 mt-1">
                   Les prix sont calculés en FCFA d'après le taux de change officiel de {exchangeRate} FCFA.

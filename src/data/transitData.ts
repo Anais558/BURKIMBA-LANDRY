@@ -139,7 +139,7 @@ export const TRANSIT_PRODUCTS: TransitProduct[] = [
       'Chenilles à maillons renforcés pour terrains latéritiques abrasifs',
       'Système télématique de géolocalisation et diagnostic à distance'
     ],
-    description: 'Engin lourd de terrassement et excavation indispensable pour les barrages hydro-agricoles, carrières et chantiers de génie civil au Faso. Faible consommation de carburant et disponibilité immédiate des pièces détachées.',
+    description: 'Engin lourd de terrassement et excavation indispensable pour les barrages hydro-agricoles, carrières et chantiers de génie civil au Burkina Faso. Faible consommation de carburant et disponibilité immédiate des pièces détachées.',
     badge: 'En Mer (Lomé)'
   },
   {

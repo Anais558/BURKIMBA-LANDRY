@@ -203,7 +203,7 @@ export default function App() {
                   <span>Accueil</span>
                 </button>
                 <span>/</span>
-                <span className="text-stone-900 font-bold">Simulateur de Coût Livré au Faso</span>
+                <span className="text-stone-900 font-bold">Simulateur de Coût Livré au BurkinaFaso</span>
               </div>
 
               {/* Title & Description */}

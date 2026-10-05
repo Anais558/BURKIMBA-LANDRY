@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { ShoppingBag, MessageSquare, Menu, X, Compass, Shield, Search, Calculator, Globe2 } from 'lucide-react';
 import { BURKIMBA_INFO } from '../data/transitData';
-import { BrandEmblem } from './BrandEmblem';
 
 interface NavbarProps {
   currentPage: string;
@@ -35,9 +34,8 @@ export const Navbar: React.FC<NavbarProps> = ({
         {/* Brand Logo & Name */}
         <button
           onClick={() => handleNavClick('home')}
-          className="flex items-center gap-2.5 text-left cursor-pointer group"
+          className="flex items-center gap-2 text-left cursor-pointer group"
         >
-          <BrandEmblem size="sm" variant="red-gold" withTagline={false} />
           <div>
             <div className="text-base sm:text-lg font-black tracking-tight text-stone-900 group-hover:text-red-600 transition-colors uppercase flex items-center gap-1">
               <span className="text-red-600 font-extrabold">BURKIMBA</span>

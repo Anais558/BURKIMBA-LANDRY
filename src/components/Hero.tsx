@@ -1,7 +1,6 @@
 import React from 'react';
 import { ArrowRight, Compass, ShieldCheck, Ship, Globe2, Calculator } from 'lucide-react';
 import { heroFleetImg, BURKIMBA_INFO } from '../data/transitData';
-import { BrandEmblem } from './BrandEmblem';
 
 interface HeroProps {
   onExploreCatalog: () => void;
@@ -31,8 +30,7 @@ export const Hero: React.FC<HeroProps> = ({
         
         {/* Harmonious Brand Badge */}
         <div className="flex flex-col items-center mb-6">
-          <BrandEmblem size="md" variant="light" withTagline={false} className="mb-3" />
-          <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-stone-900/80 border border-amber-400/40 text-xs sm:text-sm font-semibold tracking-wider text-amber-300 uppercase shadow-sm">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-stone-900/80 border border-amber-400/40 text-xs sm:text-sm font-semibold tracking-wider text-amber-300 uppercase shadow-sm">
             <span className="text-red-400 font-bold">BURKIMBA TRANSIT TRANSPORT</span>
             <span className="text-stone-500">·</span>
             <span className="text-amber-200">De l'Usine en Chine jusqu'au BurkinaFaso</span>
@@ -43,7 +41,7 @@ export const Hero: React.FC<HeroProps> = ({
 
         {/* Hero Headline */}
         <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight max-w-4xl mx-auto mb-5 drop-shadow-md">
-          Véhicules, Engins BTP &amp; Machines Importés de Chine au <span className="text-amber-400">Faso</span>
+          Véhicules, Engins BTP &amp; Machines Importés de Chine au <span className="text-amber-400">Burkina Faso</span>
         </h1>
 
         {/* Subtitle */}
