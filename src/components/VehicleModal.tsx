@@ -142,7 +142,7 @@ export const VehicleModal: React.FC<VehicleModalProps> = ({
           {/* Description */}
           <div>
             <h4 className="text-xs uppercase tracking-wider text-red-600 font-black mb-2">
-              Présentation &amp; Usage au Faso
+              Présentation &amp; Usage au BurkinaFaso
             </h4>
             <p className="text-sm text-stone-700 leading-relaxed font-normal">
               {product.description}

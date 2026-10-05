@@ -109,16 +109,6 @@ export const Navbar: React.FC<NavbarProps> = ({
             <span>Sourcing Chine</span>
           </button>
 
-          <button
-            onClick={() => handleNavClick('contact')}
-            className={`py-1 cursor-pointer transition-colors relative ${
-              currentPage === 'contact'
-                ? 'text-red-600 font-extrabold after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-red-600'
-                : 'hover:text-red-600'
-            }`}
-          >
-            Showroom Tampouy
-          </button>
         </nav>
 
         {/* Right Side Actions */}
@@ -193,7 +183,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               }`}
             >
               <Calculator className="w-4 h-4 text-amber-500" />
-              <span>Simulateur de Coût Livré au Faso</span>
+              <span>Simulateur de Coût Livré au BurkinaFaso</span>
             </button>
             <button
               onClick={() => handleNavClick('suivi')}
@@ -210,14 +200,6 @@ export const Navbar: React.FC<NavbarProps> = ({
             >
               <Globe2 className="w-4 h-4 text-amber-500" />
               <span>Sourcing sur Mesure en Chine</span>
-            </button>
-            <button
-              onClick={() => handleNavClick('contact')}
-              className={`text-left px-3 py-2.5 rounded-xl transition-colors ${
-                currentPage === 'contact' ? 'bg-red-50 text-red-600 font-black' : 'hover:bg-stone-50'
-              }`}
-            >
-              Showroom &amp; Bureau Tampouy
             </button>
             <button
               onClick={() => handleNavClick('admin')}

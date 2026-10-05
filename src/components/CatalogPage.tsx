@@ -118,15 +118,11 @@ export const CatalogPage: React.FC<CatalogPageProps> = ({
           
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-50 text-red-600 text-xs font-bold uppercase tracking-wider mb-2 border border-red-200">
-                <span className="w-2 h-2 rounded-full bg-amber-400" />
-                <span>Vente Directe Usines · Déstockage &amp; Importation</span>
-              </div>
               <h1 className="text-2xl sm:text-4xl font-extrabold text-stone-950 tracking-tight">
                 Catalogue Véhicules, Camions &amp; Engins
               </h1>
               <p className="mt-1 text-xs sm:text-sm text-stone-600 max-w-2xl">
-                Matériels neufs et révisés certifiés export. Tous les prix sont indiqués en <strong className="text-stone-900 font-bold">FCFA</strong> avec calcul automatique du coût d'acheminement jusqu'au Faso.
+                Matériels neufs et révisés certifiés export. Tous les prix sont indiqués en <strong className="text-stone-900 font-bold">FCFA</strong> avec calcul automatique du coût d'acheminement jusqu'au BurkinaFaso.
               </p>
             </div>
 

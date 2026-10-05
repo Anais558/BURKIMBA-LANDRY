@@ -35,7 +35,7 @@ export const Hero: React.FC<HeroProps> = ({
           <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-stone-900/80 border border-amber-400/40 text-xs sm:text-sm font-semibold tracking-wider text-amber-300 uppercase shadow-sm">
             <span className="text-red-400 font-bold">BURKIMBA TRANSIT TRANSPORT</span>
             <span className="text-stone-500">·</span>
-            <span className="text-amber-200">De l'Usine en Chine jusqu'au Faso</span>
+            <span className="text-amber-200">De l'Usine en Chine jusqu'au BurkinaFaso</span>
             <span className="text-stone-500 hidden sm:inline">·</span>
             <span className="text-stone-300 hidden sm:inline">Tampouy</span>
           </div>

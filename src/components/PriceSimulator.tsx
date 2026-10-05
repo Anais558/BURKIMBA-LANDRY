@@ -83,7 +83,7 @@ export const PriceSimulator: React.FC<PriceSimulatorProps> = ({
           </div>
           <div>
             <h3 className="text-base sm:text-lg font-extrabold text-stone-950">
-              Simulateur de Coût Total Livré au Faso
+              Simulateur de Coût Total Livré au BurkinaFaso
             </h3>
             <p className="text-xs text-stone-600 font-medium truncate max-w-sm sm:max-w-md">
               {product.title}

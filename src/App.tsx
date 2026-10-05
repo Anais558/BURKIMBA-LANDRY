@@ -5,7 +5,6 @@ import { CatalogPage } from './components/CatalogPage';
 import { AdminPage } from './components/AdminPage';
 import { PriceSimulator } from './components/PriceSimulator';
 import { TrackingPortal } from './components/TrackingPortal';
-import { ContactSection } from './components/ContactSection';
 import { VehicleModal } from './components/VehicleModal';
 import { CartDrawer } from './components/CartDrawer';
 import { ProformaModal } from './components/ProformaModal';
@@ -16,7 +15,7 @@ import { TransitProduct, PriceSimulation } from './types/transit';
 import { MessageSquare, Check, X, Calculator, Compass, ArrowLeft } from 'lucide-react';
 
 export default function App() {
-  const [currentPage, setCurrentPage] = useState<'home' | 'catalogue' | 'simulateur' | 'suivi' | 'contact' | 'admin'>('home');
+  const [currentPage, setCurrentPage] = useState<'home' | 'catalogue' | 'simulateur' | 'suivi' | 'admin'>('home');
   const [activeCategory, setActiveCategory] = useState<string>('all');
   
   const [cart, setCart] = useState<any[]>(() => {
@@ -108,8 +107,11 @@ export default function App() {
     }
 
     if (page === 'contact' || page === 'showroom') {
-      setCurrentPage('contact');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setCurrentPage('home');
+      setTimeout(() => {
+        const el = document.getElementById('contact');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
       return;
     }
 
@@ -118,10 +120,10 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // 1. DEDICATED FULL-PAGE ADMIN VIEW (Not a modal!)
+  // 1. DEDICATED FULL-PAGE ADMIN VIEW (Clean, Light & Modern)
   if (currentPage === 'admin') {
     return (
-      <div className="min-h-screen bg-stone-900 text-stone-100 font-sans">
+      <div className="min-h-screen bg-slate-50 text-slate-900 font-sans">
         <AdminPage onBackToStore={() => handleNavigate('home')} />
         
         {/* Toast in Admin */}
@@ -186,7 +188,7 @@ export default function App() {
           />
         )}
 
-        {/* PAGE 3: SIMULATEUR DE COÛT LIVRÉ AU FASO */}
+        {/* PAGE 3: SIMULATEUR DE COÛT LIVRÉ AU BurkinaFaso */}
         {currentPage === 'simulateur' && (
           <div className="bg-stone-50 min-h-screen py-8 sm:py-12 border-b border-stone-200">
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -272,29 +274,6 @@ export default function App() {
               </div>
 
               <TrackingPortal />
-            </div>
-          </div>
-        )}
-
-        {/* PAGE 5: SHOWROOM & CONTACT */}
-        {currentPage === 'contact' && (
-          <div className="bg-white min-h-screen py-8 sm:py-12">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              
-              {/* Breadcrumb */}
-              <div className="text-xs text-stone-500 font-medium mb-4 flex items-center gap-1.5">
-                <button
-                  onClick={() => handleNavigate('home')}
-                  className="hover:text-red-600 transition-colors cursor-pointer flex items-center gap-1"
-                >
-                  <ArrowLeft className="w-3.5 h-3.5" />
-                  <span>Accueil</span>
-                </button>
-                <span>/</span>
-                <span className="text-stone-900 font-bold">Showroom Tampouy &amp; Contact</span>
-              </div>
-
-              <ContactSection />
             </div>
           </div>
         )}
